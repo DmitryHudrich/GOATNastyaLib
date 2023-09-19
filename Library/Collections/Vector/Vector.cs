@@ -17,7 +17,7 @@ public class Vector<T>
     private const int DEFAULT_SIZE = 10;
 
     // Хранилище элементов вектора
-    private T[] _storage;
+    private T?[] _storage;
     // Заполненность вектора элементами
     private long _fullness;
 
@@ -39,5 +39,11 @@ public class Vector<T>
     {
         _storage = storage;
         _fullness = storage.Length;
+    }
+
+    public T? this[ulong index]
+    {
+        get => _storage[index];
+        set => _storage[index] = value;
     }
 }
