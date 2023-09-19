@@ -16,7 +16,7 @@ public class Vector<T>
      */
 
     // Размер вектора по умолчанию
-    private const int DEFAULT_SIZE = 10;
+    private const int _DEFAULT_SIZE = 10;
 
     // Хранилище элементов вектора
     private T?[] _storage;
@@ -25,11 +25,11 @@ public class Vector<T>
 
     /// <summary>
     /// Создание нового вектора без элементов. 
-    /// Размер вектора по умолчанию: <see cref="DEFAULT_SIZE"/>. />
+    /// Размер вектора по умолчанию: <see cref="_DEFAULT_SIZE"/>. />
     /// </summary>
     public Vector()
     {
-        _storage = new T[DEFAULT_SIZE];
+        _storage = new T[_DEFAULT_SIZE];
         _fullness = 0;
     }
 
